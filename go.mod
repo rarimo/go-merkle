@@ -1,3 +1,3 @@
-module gitlab.com/rarify-protocol/go-merkle
+module gitlab.com/rarimo/go-merkle
 
 go 1.18
