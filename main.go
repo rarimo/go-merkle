@@ -48,7 +48,7 @@ func (n *node) updateHash(hash HashF) {
 	}
 
 	var hashData []byte
-	if bytes.Compare(n.left.hash, n.right.hash) >= 0 {
+	if bytes.Compare(n.left.hash, n.right.hash) < 0 {
 		hashData = append(n.left.hash, n.right.hash...)
 	} else {
 		hashData = append(n.right.hash, n.left.hash...)
